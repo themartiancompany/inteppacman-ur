@@ -1,6 +1,6 @@
 pkgbase = inteppacman
 	pkgdesc = Integer prude pacman.
-	pkgver = 0.0.0.0.0.0.0.0.0.0.0.0.0.1
+	pkgver = 0.0.0.0.0.0.0.0.0.0.0.0.0.1.1
 	pkgrel = 1
 	url = https://github.com/themartiancompany/inteppacman
 	arch = any
@@ -10,7 +10,8 @@ pkgbase = inteppacman
 	depends = libcrash-bash
 	depends = pacman
 	depends = tsu
-	source = inteppacman-e117ccae32d5a7d75479b61f034000122fe9fa24.zip::https://github.com/themartiancompany/inteppacman/archive/e117ccae32d5a7d75479b61f034000122fe9fa24.zip
-	sha256sums = dacf4a05e8dab38c49034e5d58deb477c36d005fe81324cf7973ba5487d87eb7
+	source = inteppacman-9891a264d84ed4c921fbb0c0de94a0ef05a3a2b4.zip::https://github.com/themartiancompany/inteppacman/archive/9891a264d84ed4c921fbb0c0de94a0ef05a3a2b4.zip
+	validpgpkeys = 97E989E6CF1D2C7F7A41FF9F95684DBE23D6A3E9
+	sha256sums = 189c919c8272d1a082e90de70c73ad24b10b2d842aed70c92024e29491bf5666
 
 pkgname = inteppacman

@@ -6,8 +6,8 @@
 _offline="false"
 _git="false"
 pkgname=inteppacman
-pkgver=0.0.0.0.0.0.0.0.0.0.0.0.0.1
-_commit="e117ccae32d5a7d75479b61f034000122fe9fa24"
+pkgver=0.0.0.0.0.0.0.0.0.0.0.0.0.1.1
+_commit="9891a264d84ed4c921fbb0c0de94a0ef05a3a2b4"
 pkgrel=1
 _pkgdesc=(
   "Integer prude pacman."
@@ -59,7 +59,7 @@ _tarname="${pkgname}-${_tag}"
     "git"
   ) && \
   source+=(
-    "${_tarname}::git+${_url}#${_tag_name}=${_tag}"
+    "${_tarname}::git+${_url}#${_tag_name}=${_tag}?signed"
   ) && \
   sha256sums+=(
     SKIP
@@ -67,10 +67,10 @@ _tarname="${pkgname}-${_tag}"
 [[ "${_git}" == false ]] && \
   if [[ "${_tag_name}" == 'pkgver' ]]; then
     _tar="${_tarname}.tar.gz::${_url}/archive/refs/tags/${_tag}.tar.gz"
-    _sum='b245547bdcdbfeb09f400305a4b515b6d49635be90f560a39302761fc2688571'
+    _sum="189c919c8272d1a082e90de70c73ad24b10b2d842aed70c92024e29491bf5666"
   elif [[ "${_tag_name}" == "commit" ]]; then
     _tar="${_tarname}.zip::${_url}/archive/${_commit}.zip"
-    _sum="dacf4a05e8dab38c49034e5d58deb477c36d005fe81324cf7973ba5487d87eb7"
+    _sum="189c919c8272d1a082e90de70c73ad24b10b2d842aed70c92024e29491bf5666"
   fi && \
     source+=(
       "${_tar}"
@@ -78,6 +78,10 @@ _tarname="${pkgname}-${_tag}"
     sha256sums+=(
       "${_sum}"
     )
+validpgpkeys=(
+  # Truocolo <truocolo@aol.com>
+  '97E989E6CF1D2C7F7A41FF9F95684DBE23D6A3E9'
+)
 
 check() {
   cd \
