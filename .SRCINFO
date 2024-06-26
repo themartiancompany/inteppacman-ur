@@ -1,0 +1,16 @@
+pkgbase = inteppacman
+	pkgdesc = Integer prude pacman.
+	pkgver = 0.0.0.0.0.0.0.0.0.0.0.0.0.1
+	pkgrel = 1
+	url = https://github.com/themartiancompany/inteppacman
+	arch = any
+	license = AGPL3
+	checkdepends = shellcheck
+	makedepends = make
+	depends = libcrash-bash
+	depends = pacman
+	depends = tsu
+	source = inteppacman-e117ccae32d5a7d75479b61f034000122fe9fa24.zip::https://github.com/themartiancompany/inteppacman/archive/e117ccae32d5a7d75479b61f034000122fe9fa24.zip
+	sha256sums = dacf4a05e8dab38c49034e5d58deb477c36d005fe81324cf7973ba5487d87eb7
+
+pkgname = inteppacman
