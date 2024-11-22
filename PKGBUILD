@@ -6,8 +6,8 @@
 _offline="false"
 _git="false"
 pkgname=inteppacman
-pkgver=0.0.0.0.0.0.0.0.0.0.0.0.0.1.1.1.1
-_commit="a234cbd0570ed435ba4492100ae56d4df5720c13"
+pkgver="0.0.0.0.0.0.0.0.0.0.0.0.0.1.1.1.1.1"
+_commit="44c37515c1b1bf550b2bdc0fe0ffd0ab806d784e"
 pkgrel=1
 _pkgdesc=(
   "Integer prude pacman."
@@ -70,7 +70,7 @@ _tarname="${pkgname}-${_tag}"
     _sum="189c919c8272d1a082e90de70c73ad24b10b2d842aed70c92024e29491bf5666"
   elif [[ "${_tag_name}" == "commit" ]]; then
     _tar="${_tarname}.zip::${_url}/archive/${_commit}.zip"
-    _sum='9b64888bbd572cbd9c7bf2348940c14ea2736368b18d41374303f6b3f0f810ec'
+    _sum='007b152a60d9107c54e7ba1511354f0ab0f691ab572df6b211b189db885602fd'
   fi && \
     source+=(
       "${_tar}"
