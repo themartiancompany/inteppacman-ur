@@ -41,6 +41,7 @@ if [[ ! -v "_evmfs" ]]; then
 fi
 _offline="false"
 _git="false"
+_py="python"
 pkgname=inteppacman
 pkgver="0.0.0.0.0.0.0.0.0.0.0.0.0.1.1.1.1.1.1.1"
 _commit="ca52011b52504bc99f01273dac44368299d8d5b5"
@@ -77,6 +78,7 @@ optdepends=(
   )
 makedepends=(
   'make'
+  "${_py}-docutils"
 )
 checkdepends=(
   "shellcheck"
