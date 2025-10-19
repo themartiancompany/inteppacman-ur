@@ -58,7 +58,7 @@ _git="false"
 _py="python"
 pkgname=inteppacman
 pkgver="0.0.0.0.0.0.0.0.0.0.0.0.0.1.1.1.1.1.1.1"
-_commit="ca52011b52504bc99f01273dac44368299d8d5b5"
+_commit="e108edb12107e2c6bf2f54a600a9c4234c565453"
 pkgrel=1
 _pkgdesc=(
   "Integer prude pacman"
@@ -105,8 +105,8 @@ _tarname="${pkgname}-${_tag}"
 if [[ "${_offline}" == "true" ]]; then
   _url="file://${HOME}/${pkgname}"
 fi
-_sum="a2ed6fa695ff8200b00da33eb71d1908a5db246e44207f4b4877dc9e5865c85d"
-_sig_sum="6377026caf78c35cbcdb4150d22ab339848324917229f1a17bd52abb95a0b4e5"
+_sum="a90bb24a792b3ffdec5bc45e439c2ec78d3e9a751516f262b4834d65e8703115"
+_sig_sum="c141ef7f28b3ace4924c90716967357c4a92b59c39463e482e4a305429483fe9"
 _github_sum="SKIP"
 _evmfs_ns="0x87003Bd6C074C713783df04f36517451fF34CBEf"
 _evmfs_network="100"
