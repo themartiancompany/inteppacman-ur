@@ -46,10 +46,12 @@ fi
 if [[ ! -v "_git_http" ]]; then
   _git_http="gitlab"
 fi
-if [[ "${_git_http}" == "github" ]]; then
-  _archive_format="zip"
-elif [[ "${_git_http}" == "github" ]]; then
-  _archive_format="tar.gz"
+if [[ ! -v "_archive_format" ]]; then
+  if [[ "${_git_http}" == "github" ]]; then
+    _archive_format="zip"
+  elif [[ "${_git_http}" == "github" ]]; then
+    _archive_format="tar.gz"
+  fi
 fi
 _offline="false"
 _git="false"
