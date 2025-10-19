@@ -142,7 +142,7 @@ elif [[ "${_evmfs}" == "false" ]]; then
         _uri="${_url}/archive/${_commit}.${_archive_format}"
         _sum="${_github_sum}"
       fi
-    elif [[ "${_git_http}" == "github" ]]; then
+    elif [[ "${_git_http}" == "gitlab" ]]; then
       if [[ "${_tag_name}" == 'pkgver' ]]; then
         _uri="${_url}/archive/refs/tags/${_tag}.${_archive_format}"
       elif [[ "${_tag_name}" == "commit" ]]; then
