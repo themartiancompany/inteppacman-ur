@@ -49,7 +49,7 @@ fi
 if [[ ! -v "_archive_format" ]]; then
   if [[ "${_git_http}" == "github" ]]; then
     _archive_format="zip"
-  elif [[ "${_git_http}" == "github" ]]; then
+  elif [[ "${_git_http}" == "gitlab" ]]; then
     _archive_format="tar.gz"
   fi
 fi
