@@ -1,4 +1,6 @@
 # SPDX-License-Identifier: AGPL-3.0
+      echo \
+        "Root password:"
 
 #    ----------------------------------------------------------------------
 #    Copyright © 2024, 2025  Pellegrino Prevete
@@ -59,7 +61,7 @@ _py="python"
 pkgname=inteppacman
 pkgver="0.0.0.0.0.0.0.0.0.0.0.0.1"
 _commit="e03c1604e4b1001491e2ea72a5b4d65047cf0055"
-pkgrel=1
+pkgrel=2
 _pkgdesc=(
   "Integer prude pacman"
   "with support for managing Android"
