@@ -58,7 +58,11 @@ fi
 _offline="false"
 _git="false"
 _py="python"
-pkgname=inteppacman
+_pkg=inteppacman
+pkgbase="${_pkg}"
+pkgname=(
+  "${_pkg}"
+)
 pkgver="0.0.0.0.0.0.0.0.0.0.0.0.1"
 _commit="e03c1604e4b1001491e2ea72a5b4d65047cf0055"
 pkgrel=2
