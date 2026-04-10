@@ -1,6 +1,4 @@
 # SPDX-License-Identifier: AGPL-3.0
-      echo \
-        "Root password:"
 
 #    ----------------------------------------------------------------------
 #    Copyright © 2024, 2025  Pellegrino Prevete
@@ -30,10 +28,10 @@
 #     <pellegrinoprevete@gmail.com>
 #     <dvorak@0x87003Bd6C074C713783df04f36517451fF34CBEf>
 
-_os="$( \
+_os="$(
   uname \
     -o)"
-_evmfs_available="$( \
+_evmfs_available="$(
   command \
     -v \
     "evmfs" || \
@@ -45,8 +43,11 @@ if [[ ! -v "_evmfs" ]]; then
     _evmfs="false"
   fi
 fi
+if [[ ! -v "_git_service" ]]; then
+  _git_http="github"
+fi
 if [[ ! -v "_git_http" ]]; then
-  _git_http="gitlab"
+  _git_http="${_git_service}"
 fi
 if [[ ! -v "_archive_format" ]]; then
   if [[ "${_git_http}" == "github" ]]; then
